@@ -4,9 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Button Moving validation Animation</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    Hi
+    <div class="signin-box">
+      <form action="dashboard.html" name="submitForm" id="subform">
+        <input type="text" placeholder="Enter your user name" onclick="resetbutton()" id="user_name" />
+        <input type="password" placeholder="Enter password" onclick="resetbutton()" id="pass" />
+        <button name="submit">Submit</button>
+        <input type="submit" id="signin-btn" value="Sign In" onmouseover="moveOver()" />
+      </form>
+    </div>
   </body>
 </html>
