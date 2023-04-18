@@ -1,7 +1,51 @@
-.signin-box {
-  width: 80%;
+/* .signin-box {
   max-width: 350px;
   border: 1px solid;
+  padding: 10%;
+  margin-top: 8.5%;
+  margin-left: 25%;
+  position: absolute;
+} */
+
+.signin-box {
+  max-width: 120px;
+  border: 1px solid rgba(116, 116, 116, 0.76);
+  position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.75rem;
+  padding: 10px 0;
+  height: 50%;
+  padding-left: 10%;
+}
+
+.signin-box input {
+  height: 40px;
+  margin: 12px auto;
+  border: 1px solid rgba(116, 116, 116, 0.76);
+  border-radius: 0.75rem;
+  padding-left: 15px;
+  /* position: absolute; */
+}
+
+/* .signin-box input:focus {
+  outline: none;
+} */
+
+.signin-box form {
+  margin: 0 -85px 0px;
+}
+
+#signin-btn {
+  width: auto;
+  background-color: #5271ff;
+  color: white;
+  padding: 0 30px;
+  border: 1px solid;
+  cursor: pointer;
+  height: 50px;
+  float: right;
+  transition: 0.15s;
+  margin: 35px 5% 12px 0;
 }
