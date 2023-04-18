@@ -10,11 +10,49 @@
   <body>
     <div class="signin-box">
       <form action="dashboard.html" name="submitForm" id="subform">
-        <input type="text" placeholder="Enter your user name" onclick="resetbutton()" id="user_name" />
+        <input type="text" placeholder="Enter email address" onclick="resetbutton()" id="email_address" />
         <input type="password" placeholder="Enter password" onclick="resetbutton()" id="pass" />
-        <button name="submit">Submit</button>
         <input type="submit" id="signin-btn" value="Sign In" onmouseover="moveOver()" />
       </form>
     </div>
+
+    <script>
+      var value = 0;
+      function moveOver() {
+        const email = document.forms['submitForm']['email_address'].value;
+        const password = document.forms['submitForm']['pass'].value;
+
+        const emailvalidation = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+        if ((!email.match(emailvalidation) || password == '') && value == 1) {
+          buttonMoveRight();
+          value = 0;
+          return false;
+        }
+
+        if ((!email.match(emailvalidation) || password == '') && value == 0) {
+          buttonMoveLeft();
+          value = 1;
+          return false;
+        } else {
+          document.getElementById('signin-btn').style.cursor = 'pointer';
+        }
+      }
+
+      function buttonMoveRight() {
+        const button = document.getElementById('signin-btn');
+        button.style.transform = 'translateX(0%)';
+      }
+
+      function buttonMoveLeft() {
+        const button = document.getElementById('signin-btn');
+        button.style.transform = 'translateX(-160%)';
+      }
+
+      function resetBtn() {
+        const button = document.getElementById('signin-btn');
+        button.style.transform = 'translateX(0%)';
+      }
+    </script>
   </body>
 </html>
