@@ -1,10 +1,15 @@
 /* .signin-box {
   max-width: 350px;
-  border: 1px solid;
-  padding: 10%;
-  margin-top: 8.5%;
-  margin-left: 25%;
+  border: 1px solid rgba(116, 116, 116, 0.76);
+  padding: 5%;
+  margin-top: 8.5%; */
+/* margin-left: 5%; */
+/* position: absolute;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.75rem;
 } */
 
 .signin-box {
@@ -26,12 +31,7 @@
   border: 1px solid rgba(116, 116, 116, 0.76);
   border-radius: 0.75rem;
   padding-left: 15px;
-  /* position: absolute; */
 }
-
-/* .signin-box input:focus {
-  outline: none;
-} */
 
 .signin-box form {
   margin: 0 -85px 0px;
@@ -47,5 +47,5 @@
   height: 50px;
   float: right;
   transition: 0.15s;
-  margin: 35px 5% 12px 0;
+  margin: 55px 0.5px 0px 50px;
 }
