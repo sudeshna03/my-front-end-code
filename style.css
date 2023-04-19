@@ -48,4 +48,5 @@
   float: right;
   transition: 0.15s;
   margin: 55px 0.5px 0px 50px;
+  transform: translate(-143%, 0);
 }
